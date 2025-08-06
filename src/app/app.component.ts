@@ -34,82 +34,88 @@ export class AppComponent implements OnInit {
 
   tools: any = {
     front: {
-      react: { name: 'React', url: 'img/dev-tools/react-icon.png' },
-      angular: { name: 'Angular', url: 'img/dev-tools/angular-icon-1.png' },
+      react: { name: 'React', url: 'assets/img/dev-tools/react-icon.png' },
+      angular: {
+        name: 'Angular',
+        url: 'assets/img/dev-tools/angular-icon-1.png',
+      },
       capacitor: {
         name: 'Capacitor',
-        url: 'img/dev-tools/capacitor-icon.png',
+        url: 'assets/img/dev-tools/capacitor-icon.png',
       },
-      ionic: { name: 'Ionic', url: 'img/dev-tools/ionic-icon.png' },
+      ionic: { name: 'Ionic', url: 'assets/img/dev-tools/ionic-icon.png' },
       wordpress: {
         name: 'Wordpress',
-        url: 'img/dev-tools/wordpress-icon.png',
+        url: 'assets/img/dev-tools/wordpress-icon.png',
       },
       tailwind: {
         name: 'Tailwind CSS',
-        url: 'img/dev-tools/tailwind-icon.png',
+        url: 'assets/img/dev-tools/tailwind-icon.png',
       },
       bootstrap: {
         name: 'Bootstrap',
-        url: 'img/dev-tools/bootstrap-icon.png',
+        url: 'assets/img/dev-tools/bootstrap-icon.png',
       },
       html: {
         name: 'HTML',
-        url: 'img/dev-tools/html-icon.png',
+        url: 'assets/img/dev-tools/html-icon.png',
       },
       css: {
         name: 'CSS',
-        url: 'img/dev-tools/css-icon.png',
+        url: 'assets/img/dev-tools/css-icon.png',
       },
     },
     backend: {
-      nest: { name: 'NestJS', url: 'img/dev-tools/nest-icon.png' },
-      next: { name: 'NextJS', url: 'img/dev-tools/next-icon.png' },
-      laravel: { name: 'Laravel', url: 'img/dev-tools/laravel-icon.png' },
-      django: { name: 'Django', url: 'img/dev-tools/django-icon.png' },
+      nest: { name: 'NestJS', url: 'assets/img/dev-tools/nest-icon.png' },
+      next: { name: 'NextJS', url: 'assets/img/dev-tools/next-icon.png' },
+      laravel: {
+        name: 'Laravel',
+        url: 'assets/img/dev-tools/laravel-icon.png',
+      },
+      django: { name: 'Django', url: 'assets/img/dev-tools/django-icon.png' },
     },
     storage: {
       postgres: {
         name: 'PostgresSQL',
-        url: 'img/dev-tools/postgres-icon.png',
+        url: 'assets/img/dev-tools/postgres-icon.png',
       },
       firebase: {
         name: 'Firebase',
-        url: 'img/dev-tools/firebase-icon.png',
+        url: 'assets/img/dev-tools/firebase-icon.png',
       },
       sql: {
         name: 'MySQL',
-        url: 'img/dev-tools/sql-icon.png',
+        url: 'assets/img/dev-tools/sql-icon.png',
       },
       prisma: {
         name: 'Prisma',
-        url: 'img/dev-tools/prisma.png',
+        url: 'assets/img/dev-tools/prisma.png',
       },
       aws: {
         name: 'AWS',
-        url: 'img/dev-tools/aws.png',
+        url: 'assets/img/dev-tools/aws.png',
       },
       git: {
         name: 'GitHub',
-        url: 'img/dev-tools/github.png',
+        url: 'assets/img/dev-tools/github.png',
       },
     },
     lenguages: {
       java: {
         name: 'Java',
-        url: 'img/dev-tools/java-icon.png',
+        url: 'assets/img/dev-tools/java-icon.png',
       },
       ts: {
         name: 'TypeScript',
-        url: 'img/dev-tools/ts-icon.png',
+        url: 'assets/img/dev-tools/ts-icon.png',
       },
       js: {
         name: 'JavaScript',
-        url: 'img/dev-tools/js-icon.png',
+        url: 'assets/img/dev-tools/js-icon.png',
       },
       php: {
         name: 'PHP',
-        url: 'img/dev-tools/php-icon.png',
+        url: 'assets/img/dev-tools/php-icon.png',
       },
     },
   };
@@ -119,8 +125,14 @@ export class AppComponent implements OnInit {
       title: 'SAP - CECyTEM',
       description: '',
       images: [
-        { url: 'img/projects-images/cecytem/cecy-d.png', position: true },
-        { url: 'img/projects-images/cecytem/cecy-m.png', position: false },
+        {
+          url: 'assets/img/projects-images/cecytem/cecy-d.png',
+          position: true,
+        },
+        {
+          url: 'assets/img/projects-images/cecytem/cecy-m.png',
+          position: false,
+        },
       ],
       tools: [
         this.tools.front.angular,
@@ -137,8 +149,11 @@ export class AppComponent implements OnInit {
       title: 'Principal Page - CDEFIS',
       description: '',
       images: [
-        { url: 'img/projects-images/cdfis/cdefis1.png', position: true },
-        { url: 'img/projects-images/cdfis/cdefis2.png', position: false },
+        { url: 'assets/img/projects-images/cdfis/cdefis1.png', position: true },
+        {
+          url: 'assets/img/projects-images/cdfis/cdefis2.png',
+          position: false,
+        },
       ],
       tools: [
         this.tools.front.react,
@@ -153,9 +168,12 @@ export class AppComponent implements OnInit {
       title: 'Principal Page - HalfMooonBayRvResort',
       description: '',
       images: [
-        { url: 'img/projects-images/wordpress/wordpress.png', position: true },
         {
-          url: 'img/projects-images/wordpress/wordpress2.png',
+          url: 'assets/img/projects-images/wordpress/wordpress.png',
+          position: true,
+        },
+        {
+          url: 'assets/img/projects-images/wordpress/wordpress2.png',
           position: false,
         },
       ],
@@ -171,9 +189,9 @@ export class AppComponent implements OnInit {
       title: 'Edu Riec - CDEFIS',
       description: '',
       images: [
-        { url: 'img/projects-images/cdfis/edu1.png', position: true },
+        { url: 'assets/img/projects-images/cdfis/edu1.png', position: true },
         {
-          url: 'img/projects-images/cdfis/edu2.png',
+          url: 'assets/img/projects-images/cdfis/edu2.png',
           position: false,
         },
       ],
