@@ -13,7 +13,7 @@ export class CardsInfoComponent {
     {
       type: 'experience',
       title: 'Experiencia',
-      url: '/img/icons/ash.png',
+      url: 'assets/img/icons/ash.png',
       content: [
         {
           title: 'Laboral',
@@ -33,7 +33,7 @@ export class CardsInfoComponent {
     {
       type: 'habilidades',
       title: 'Habilidades',
-      url: '/img/icons/pokeball.png',
+      url: 'assets/img/icons/pokeball.png',
       content: [
         'Trabajo en equipo presencial y a distancia',
         'Buen manejo del trabajo bajo presión',
