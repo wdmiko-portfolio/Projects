@@ -1,0 +1,67 @@
+<div class="nintendo">
+  <div class="screen" *ngIf="showScreenInit; else screenPokedex">
+    <img
+      style="height: 100%"
+      class="start"
+      src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3p3OWF4ZHR1Y2J3aWF0OWFremZtY2dvN2h3M2luMGlzdjNkbzF1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gtuQIOTlQdk9Mx3L5i/giphy.gif"
+      alt="Loading..."
+    />
+    <p
+      class="blinking-text"
+      style="
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: 10px;
+        align-items: center;
+      "
+    >
+      Press enter - Start <br /><span style="font-size: small"
+        >© 1996 pokemon / nintendo</span
+      >
+    </p>
+  </div>
+  <div class="buttons-content">
+    <!-- <button class="button-prev" (click)="reset($event)">On</button> -->
+    <h3 style="color: rgb(217, 218, 219)">Nientiendo</h3>
+    <div class="controls">
+      <div class="row">
+        <button class="button-row" (click)="handlePrevP()">
+          <img src="/img/icons/btn-l.png" alt="" />
+        </button>
+        <button id="next" class="button-row" (click)="handleNextP()">
+          <img src="/img/icons/btn-r.png" alt="" />
+        </button>
+      </div>
+
+      <div class="row">
+        <button class="button-row" (click)="handleGira()">
+          <img src="/img/icons/btn-a.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #screenPokedex>
+    <div class="screen background-game">
+      <div style="z-index: 100; overflow: scroll; padding: 10px">
+        <p class="text-center blinking-text" style="margin: 20px">Dev Tools</p>
+        <div class="dev-tools wrap">
+          <div
+            [ngClass]="{ gira: i == girarIndice }"
+            *ngFor="let tool of devTools; let i = index"
+          >
+            <img
+              [src]="tool.url"
+              [ngClass]="{
+                active: i == toolIndex,
+              }"
+              alt=""
+              width="70"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>

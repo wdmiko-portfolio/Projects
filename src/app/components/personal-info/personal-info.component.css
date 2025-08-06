@@ -1,0 +1,64 @@
+.img-profile {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.6);
+}
+
+.background-title {
+  background-image: url("/img/rowp.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  height: fit-content;
+  width: 500px;
+}
+
+.title-info p {
+  text-align: center;
+  color: var(--gray-700);
+  outline-style: auto;
+  padding: 5px;
+  align-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title-info {
+  margin: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.title-info strong {
+  padding: 5px;
+  align-content: center;
+}
+.info-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.info-content {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 1023px) {
+  .info-container {
+    flex-direction: column;
+  }
+  .background-title {
+    width: 100%;
+  }
+
+  .info-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+}

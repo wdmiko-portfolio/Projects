@@ -1,0 +1,30 @@
+<div style="width: 100%; gap: 20px" class="container-info-ex">
+  <div class="card-info" *ngFor="let info of myinfo">
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <img width="50px" src="{{ info.url }}" alt="" />
+      <h1>{{ info.title }}</h1>
+    </div>
+    <ng-container [ngSwitch]="info.type">
+      <ng-container *ngSwitchCase="'experience'">
+        <div *ngFor="let item of info.content" class="row justifyc-baseline">
+          <b *ngIf="item.title">{{ item.title }}:</b>
+          <p class="color-info-text">{{ item.description }}</p>
+        </div>
+      </ng-container>
+      <div *ngSwitchCase="'habilidades'">
+        <ul style="padding: 1rem">
+          <li *ngFor="let item of info.content">
+            <p class="color-info-text">{{ item }}</p>
+          </li>
+        </ul>
+      </div>
+    </ng-container>
+  </div>
+</div>

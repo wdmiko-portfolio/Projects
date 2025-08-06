@@ -1,0 +1,32 @@
+.card-info {
+  width: 50%;
+  background-color: rgb(182 182 182);
+  padding: 20px;
+  border-radius: 20px;
+  outline: auto;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+}
+
+.card-info:hover {
+  background-color: white;
+  transform: scale(1.02);
+}
+.color-info-text {
+  color: #393939;
+}
+.card-info:hover .color-info-text {
+  color: black;
+}
+.container-info-ex {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 1080px) {
+  .container-info-ex {
+    flex-direction: column;
+  }
+  .card-info {
+    width: 100%;
+  }
+}

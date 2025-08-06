@@ -1,0 +1,28 @@
+<img
+  class="img-rotate"
+  src="/img/icons/rotate2.png"
+  alt="icono giratorio"
+  width="40"
+  (click)="handleClickRotate()"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+  [style.transform]="
+    'rotateY(' + rotation + 'deg)' + (isHovering ? ' scale(1.2)' : '')
+  "
+/>
+<div [ngClass]="{ 'projects-container': true, 'project-rev': !imageIndex }">
+  <img
+    *ngFor="let image of resImagesProject; let i = index"
+    [ngClass]="
+      imageIndex
+        ? i == 0
+          ? 'front'
+          : 'back'
+        : i == 0
+        ? 'front-back'
+        : 'back-front'
+    "
+    src="{{ image.url }}"
+    alt=""
+  />
+</div>
