@@ -20,6 +20,7 @@ main {
   padding: 1rem;
   box-sizing: border-box;
   margin: auto;
+  overflow: auto;
 }
 
 .portfoil-view {
