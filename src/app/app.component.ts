@@ -118,7 +118,7 @@ export class AppComponent implements OnInit {
         url: 'assets/img/dev-tools/php-icon.png',
       },
       c: {
-        name: 'C+++',
+        name: 'C++',
         url: 'assets/img/dev-tools/c.png',
       },
       python: {
@@ -154,7 +154,7 @@ export class AppComponent implements OnInit {
       ], // Next como fullstack
     },
     {
-      title: 'Principal Page - CDEFIS',
+      title: 'Portal Page - CDEFIS',
       description: '',
       images: [
         { url: 'assets/img/projects-images/cdfis/cdefis1.png', position: true },
@@ -173,7 +173,7 @@ export class AppComponent implements OnInit {
       ],
     },
     {
-      title: 'Principal Page - HalfMooonBayRvResort',
+      title: 'Resort Page - HalfMooonBayRvResort',
       description: '',
       images: [
         {
@@ -194,7 +194,7 @@ export class AppComponent implements OnInit {
       ],
     },
     {
-      title: 'Edu Riec - CDEFIS',
+      title: 'Sistema Control de Usuarios - Edu Riec',
       description: '',
       images: [
         { url: 'assets/img/projects-images/cdfis/edu1.png', position: true },
@@ -214,6 +214,28 @@ export class AppComponent implements OnInit {
         this.tools.storage.git,
       ],
     },
+    {
+      title: 'Sistema Gestor - Pickerpro',
+      description: '',
+      images: [
+        {
+          url: 'assets/img/projects-images/picker/picker2.png',
+          position: true,
+        },
+        {
+          url: 'assets/img/projects-images/picker/picker.png',
+          position: false,
+        },
+      ],
+      tools: [
+        this.tools.front.angular,
+        this.tools.front.bootstrap,
+        this.tools.lenguages.ts,
+        this.tools.backend.nest,
+        this.tools.storage.firebase,
+        this.tools.storage.git,
+      ],
+    },
   ];
   categories = Object.keys(this.tools);
 
@@ -224,14 +246,14 @@ export class AppComponent implements OnInit {
   }
 
   nextProject(): void {
-    console.log(this.projects.length);
+    // console.log(this.projects.length);
     if (this.currentIndex != this.projects.length - 1) {
       this.currentIndex++;
       const projectInfo = this.projects[this.currentIndex];
       this.arrTools = projectInfo.tools;
       this.titleProject = projectInfo.title;
       this.imagesProject = projectInfo.images;
-      console.log('project', projectInfo);
+      // console.log('project', projectInfo);
     } else {
       return;
     }
@@ -243,7 +265,7 @@ export class AppComponent implements OnInit {
       this.arrTools = projectInfo.tools;
       this.titleProject = projectInfo.title;
       this.imagesProject = projectInfo.images;
-      console.log('project', projectInfo);
+      // console.log('project', projectInfo);
     } else {
       return;
     }

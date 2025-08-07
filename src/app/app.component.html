@@ -36,9 +36,7 @@
         Anterior
       </button>
       <button
-        [ngClass]="
-          currentIndex == imagesProject.length + 1 ? 'disabled-btn' : ''
-        "
+        [ngClass]="currentIndex == projects.length - 1 ? 'disabled-btn' : ''"
         class="button-np"
         id="next"
         (click)="nextProject()"

@@ -46,11 +46,11 @@ export class PokedexComponent implements OnInit, OnChanges {
   toogleStart(): void {
     this.showScreenInit = false;
     localStorage.setItem('showScreenInit', this.showScreenInit.toString());
-    console.log('enter');
+    // console.log('enter');
   }
 
   reset(event: MouseEvent): void {
-    console.log('on');
+    // console.log('on');
     (event.target as HTMLElement).blur();
     this.showScreenInit = true;
     localStorage.setItem('showScreenInit', this.showScreenInit.toString());
