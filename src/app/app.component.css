@@ -47,8 +47,8 @@ main {
   transform: scale(1.1);
 }
 .button-np {
-  width: 8rem;
-  padding: 5px;
+  width: 10rem;
+  padding: 10px;
   background-color: #0000004a;
   color: white;
   border-radius: 5px;

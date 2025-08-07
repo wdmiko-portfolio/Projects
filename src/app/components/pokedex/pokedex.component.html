@@ -1,5 +1,5 @@
 <div class="nintendo">
-  <div class="screen" *ngIf="showScreenInit; else screenPokedex">
+  <!-- <div class="screen" *ngIf="showScreenInit; else screenPokedex">
     <img
       style="height: 100%"
       class="start"
@@ -20,6 +20,26 @@
         >© 1996 pokemon / nintendo</span
       >
     </p>
+  </div> -->
+  <div class="screen background-game">
+    <div style="z-index: 100; overflow: scroll; padding: 10px; overflow: auto">
+      <p class="text-center blinking-text" style="margin: 20px">Dev Tools</p>
+      <div class="dev-tools wrap">
+        <div
+          [ngClass]="{ gira: i == girarIndice }"
+          *ngFor="let tool of devTools; let i = index"
+        >
+          <img
+            [src]="tool.url"
+            [ngClass]="{
+              active: i == toolIndex,
+            }"
+            alt=""
+            width="70"
+          />
+        </div>
+      </div>
+    </div>
   </div>
   <div class="buttons-content">
     <!-- <button class="button-prev" (click)="reset($event)">On</button> -->
