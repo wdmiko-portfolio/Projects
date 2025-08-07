@@ -108,6 +108,7 @@ main {
   .content-projects {
     width: 100%;
     min-height: 350px;
+    height: auto;
   }
 }
 .cards-container {
