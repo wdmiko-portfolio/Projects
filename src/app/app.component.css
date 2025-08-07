@@ -22,6 +22,49 @@ main {
   margin: auto;
   overflow: auto;
 }
+.brillo-texto {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(205, 205, 205);
+  position: relative;
+}
+
+.brillo-texto::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+
+  background: linear-gradient(
+    300deg,
+    transparent 0%,
+    rgb(255, 255, 255) 50%,
+    transparent 100%
+  );
+  background-size: 25% 100%;
+  background-repeat: no-repeat;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: brillo 0.7s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes brillo {
+  0% {
+    background-position: -20% 0%;
+  }
+  100% {
+    background-position: 150% 0%;
+  }
+}
 
 .portfoil-view {
   width: 100%;
@@ -83,7 +126,8 @@ main {
 }
 .content-projects {
   width: 50%;
-  height: 45vh;
+  min-height: 45vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,19 +143,6 @@ main {
   /* font-family: monospace; */
 }
 
-@media screen and (max-width: 650px) {
-  .content-nintendo {
-    width: 100%;
-  }
-  .portfoil-view {
-    flex-direction: column;
-  }
-  .content-projects {
-    width: 100%;
-    min-height: 350px;
-    height: auto;
-  }
-}
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -154,5 +185,19 @@ main {
 @media (max-width: 480px) {
   .card {
     max-width: 100%; /* 1 por fila en móviles muy pequeños */
+  }
+}
+@media screen and (max-width: 650px) {
+  .content-nintendo {
+    width: 100%;
+  }
+  .portfoil-view {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .content-projects {
+    width: 100%;
+    min-height: 350px;
+    height: auto;
   }
 }

@@ -1,13 +1,13 @@
 <main>
-  <div style="width: 100%; overflow-wrap: break-word; word-break: break-word">
-    <h1 class="titulo-p">PORTAFOLIO</h1>
-  </div>
+  <!-- <div style="width: 100%; overflow-wrap: break-word; word-break: break-word">
+  </div> -->
+  <h1 class="brillo-texto" data-text="PORTAFOLIO">PORTAFOLIO</h1>
 
   <section>
     <app-personal-info class="personal-info-container"> </app-personal-info>
   </section>
 
-  <h1 class="titulo-p">PROYECTOS</h1>
+  <h1 class="brillo-texto" data-text="PROYECTOS">PROYECTOS</h1>
 
   <section class="portfoil-view">
     <app-pokedex [devTools]="arrTools" class="content-nintendo"> </app-pokedex>
@@ -43,7 +43,7 @@
     </div>
   </section>
   <!-- Itera por cada categoría del objeto tools -->
-  <h1 class="titulo-p">HERRAMIENTAS DEV</h1>
+  <h1 class="brillo-texto" data-text="HERRAMIENTAS DEV">HERRAMIENTAS DEV</h1>
 
   <section class="cards-container">
     <div *ngFor="let category of categories" class="card">
