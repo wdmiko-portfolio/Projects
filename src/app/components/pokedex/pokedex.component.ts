@@ -12,7 +12,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-pokedex',
   standalone: true,
-  imports: [NgIf, NgFor, NgClass],
+  imports: [NgFor, NgClass],
   templateUrl: './pokedex.component.html',
   styleUrl: './pokedex.component.css',
 })

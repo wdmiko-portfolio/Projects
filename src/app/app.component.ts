@@ -117,6 +117,14 @@ export class AppComponent implements OnInit {
         name: 'PHP',
         url: 'assets/img/dev-tools/php-icon.png',
       },
+      c: {
+        name: 'C+++',
+        url: 'assets/img/dev-tools/c.png',
+      },
+      python: {
+        name: 'Python',
+        url: 'assets/img/dev-tools/python.png',
+      },
     },
   };
 
