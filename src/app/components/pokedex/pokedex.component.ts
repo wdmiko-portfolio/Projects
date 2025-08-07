@@ -23,6 +23,8 @@ export class PokedexComponent implements OnInit, OnChanges {
   toolIndex = 0;
   girarIndice: number | null = null;
 
+  @Input() resTitleProject: string = '';
+
   @Input() devTools: any = [];
 
   ngOnInit(): void {

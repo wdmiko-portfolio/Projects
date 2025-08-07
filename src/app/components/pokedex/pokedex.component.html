@@ -43,7 +43,17 @@
   </div>
   <div class="buttons-content">
     <!-- <button class="button-prev" (click)="reset($event)">On</button> -->
-    <h3 style="color: rgb(217, 218, 219)">Nientiendo</h3>
+    <h3
+      style="
+        color: rgb(217, 218, 219);
+        width: 100%;
+        box-sizing: border-box;
+        font-size: small;
+        text-align: center;
+      "
+    >
+      {{ resTitleProject }}
+    </h3>
     <div class="controls">
       <div class="row">
         <button class="button-row" (click)="handlePrevP()">

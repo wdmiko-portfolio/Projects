@@ -10,7 +10,12 @@
   <h1 class="brillo-texto" data-text="PROYECTOS">PROYECTOS</h1>
 
   <section class="portfoil-view">
-    <app-pokedex [devTools]="arrTools" class="content-nintendo"> </app-pokedex>
+    <app-pokedex
+      [resTitleProject]="titleProject"
+      [devTools]="arrTools"
+      class="content-nintendo"
+    >
+    </app-pokedex>
     <app-portfoil-preview
       (nextClicked)="nextProject()"
       (prevClicked)="prevProject()"
@@ -60,15 +65,8 @@
       </h3>
       <div class="icons">
         <div
-          class="icono"
+          class="icono container-dev-icons"
           *ngFor="let tool of getToolsArray(tools[category])"
-          style="
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            min-height: 100px;
-            flex-direction: column;
-          "
         >
           <img [src]="tool.url" [alt]="tool.name" width="70" loading="lazy" />
           <p style="font-size: xx-small">{{ tool.name }}</p>
