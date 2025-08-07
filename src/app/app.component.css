@@ -92,11 +92,11 @@ main {
 
 .titulo-p {
   margin-top: 50px;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-family: monospace;
+  /* font-family: monospace; */
 }
 
 @media screen and (max-width: 650px) {
