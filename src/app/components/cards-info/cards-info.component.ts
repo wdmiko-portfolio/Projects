@@ -26,7 +26,7 @@ export class CardsInfoComponent {
         {
           title: '',
           description:
-            'He tenido la oportunidad de trabajar en diferentes proyectos, tanto de forma presencial como a distancia, aportando mis conocimientos para la resolución de problemas y desarrollo.',
+            'He participado en proyectos presenciales y remotos, aportando soluciones enfocadas en el desarrollo de software. También he colaborado como freelancer, desarrollando proyectos con distintos frameworks, contribuyendo a la mejora de funcionalidades y la creación de componentes.',
         },
       ],
     },

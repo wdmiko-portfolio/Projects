@@ -30,4 +30,7 @@
   .card-info {
     width: 100%;
   }
+  .title-card {
+    font-size: x-large;
+  }
 }
