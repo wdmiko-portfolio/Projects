@@ -183,11 +183,11 @@ main {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .card {
-    max-width: calc(50% - 1rem); /* 2 por fila en móviles */
+    /* max-width: calc(50% - 1rem); 
   }
-}
+} */
 
 @media (max-width: 480px) {
   .card {
